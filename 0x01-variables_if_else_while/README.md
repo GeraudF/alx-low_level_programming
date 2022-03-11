@@ -6,3 +6,4 @@
 5-print-numbers.c:a program that prints all single digit numbers of base 10 starting from 0, followed by a new line.
 6-print-numberz.c:a program that prints all single digit numbers of base 10 starting from 0, followed by a new line.
 7-print-tebahpla.c:a program that prints the lowercase alphabet in reverse, followed by a new line.
+8-print-base16.c:a program that prints all the numbers of base 16 in lowercase, followed by a new line.
