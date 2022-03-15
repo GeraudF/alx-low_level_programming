@@ -12,3 +12,4 @@
 11-print_to_98.c:a function that prints all natural numbers from n to 98, followed by a new line.
 100-times_table.c:a function that prints the n times table, starting with 0.Prototype: void print_times_table(int n);If n is greater than 15 or less than 0 the function should not print anything
 101-natural.c:list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Write a program that computes and prints the sum of all the multiples of 3 or 5 below 1024 (excluded), followed by a new line.
+102-fibonacci.c: a program that finds and prints the sum of the even-valued terms, followed by a new line.
