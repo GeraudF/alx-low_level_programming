@@ -10,3 +10,4 @@
 9-times_table.c:a function that prints the 9 times table, starting with 0.Prototype: void times_table(void);Format: see example
 10-add.c:a function that adds two integers and returns the result.Prototype: int add(int, int);
 11-print_to_98.c:a function that prints all natural numbers from n to 98, followed by a new line.
+100-times_table.c:a function that prints the n times table, starting with 0.Prototype: void print_times_table(int n);If n is greater than 15 or less than 0 the function should not print anything
