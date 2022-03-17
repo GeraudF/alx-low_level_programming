@@ -1,8 +1,10 @@
 #include <stdio.h>
 
 /**
-* program that displays an infinite loop as long as i<10
+* main - causes an infinite loop
+* Return: 0
 */
+//program that displays an infinite loop as long as i<10
 
 int main(void)
 {
