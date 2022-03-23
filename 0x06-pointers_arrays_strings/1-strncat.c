@@ -1,23 +1,25 @@
-# inclure  " main.h "
+#include "main.h"
 
-/* *
-* _strncat - concaténer deux chaînes
-* @dest : chaîne
-* @src : chaîne
-* @n : nombre d'éléments à concaténer dans
-* Retour : pointeur vers `dest` résultant
+/**
+ * _strcat - concatenate two strings
+ * @dest: char string to concatenate to
+ * @src: char string
+ * Return: pointer to resulting string `dest`
  */
 
-char * _strncat ( char *dest, char *src, int n)
+char *_strcat(char *dest, char *src)
 {
-int je, c ;
+int i, c;
 
-pour (i = 0 ; dest[i] != ' \0 ' ; i++)
+for (i = 0; dest[i] != '\0'; i++)
 ;
 
-pour (c = 0 ; src[c] != ' \0 ' && n > 0 ; c++, n--, i++)
+for (c = 0; src[c] != '\0'; c++)
 {
-destination[i] = source[c] ;
+dest[i] = src[c];
+i++;
 }
-retour (dest);
+
+dest[i] = '\0';
+return (dest);
 }
