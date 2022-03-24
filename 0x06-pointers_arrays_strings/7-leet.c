@@ -1,28 +1,30 @@
 #include "main.h"
-
 /**
- * leet - encode a string into 1337
- * @s: string
- * Return: encoded string `s`
+ *puts_half - prints half of a string
+ *followed by a new line
+ *@str: string to be printed
  */
-
-char *leet(char *s)
+void puts_half(char *str)
 {
-int i;
-
-for (i = 0; s[i] != '\0'; i++)
+int len, n, i;
+len = 0;
+while (str[len] != '\0')
 {
-while (s[i] == 'a' || s[i] == 'A')
-s[i] = '4';
-while (s[i] == 'e' || s[i] == 'E')
-s[i] = '3';
-while (s[i] == 'o' || s[i] == 'O')
-s[i] = '0';
-while (s[i] == 't' || s[i] == 'T')
-s[i] = '7';
-while (s[i] == 'l' || s[i] == 'L')
-s[i] = '1';
+len++;
 }
-
-return (s);
+if (len % 2 == 0)
+{
+for (i = len / 2; str[i] != '\0'; i++)
+{
+_putchar(str[i]);
+}
+}
+else if (len % 2)
+{
+for (n = (len - 1) / 2; n < len - 1; n++)
+{
+_putchar(str[n + 1]);
+}
+}
+_putchar('\n');
 }
