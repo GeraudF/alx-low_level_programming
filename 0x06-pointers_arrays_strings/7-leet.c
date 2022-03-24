@@ -1,30 +1,21 @@
 #include "main.h"
 /**
- *puts_half - prints half of a string
- *followed by a new line
- *@str: string to be printed
+ *leet - encodes a string into 1337
+ *@s: string to encode
+ *Return: address of s
  */
-void puts_half(char *str)
+char *leet(char *s)
 {
-int len, n, i;
-len = 0;
-while (str[len] != '\0')
+int i, j;
+char a[] = "aAeEoOtTlL";
+char b[] = "4433007711";
+for (i = 0; *(s + i); i++)
 {
-len++;
-}
-if (len % 2 == 0)
+for (j = 0; j <= 9; j++)
 {
-for (i = len / 2; str[i] != '\0'; i++)
-{
-_putchar(str[i]);
+if (a[j] == s[i])
+s[i] = b[j];
 }
 }
-else if (len % 2)
-{
-for (n = (len - 1) / 2; n < len - 1; n++)
-{
-_putchar(str[n + 1]);
-}
-}
-_putchar('\n');
+return (s);
 }
